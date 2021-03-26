@@ -1,0 +1,27 @@
+$directions: 'top', 'right', 'bottom', 'left';
+@each $direction in $directions {
+  @for $i from 1 through 20 {
+    .space-#{$direction}-#{$i} {
+      margin-#{$direction}: calc((#{$i} * 10px));
+
+      @include media-breakpoint-down(lg) {
+        margin-#{$direction}: calc((#{$i} * 10px) * .8);
+      }
+
+      @include media-breakpoint-down(md) {
+        margin-#{$direction}: calc((#{$i} * 10px) * .7);
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin-#{$direction}: calc((#{$i} * 10px) * .5);
+      }
+    }
+  }
+}
+
+$text-directions: 'left', 'center', 'right';
+@each $direction in $text-directions {
+  .text-#{$direction} {
+    text-align: #{$direction};
+  }
+}

@@ -1,0 +1,89 @@
+/* Defaults */
+$default-fz: 16px;
+$default-font: 'Roboto', sans-serif;
+$text-color: #262626;
+$accent-color: #fff;
+$accent-hover: #1a351a;
+$gutter: 30px;
+
+/* Breakpoints */
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, bmd:985px, lg: 1130px, xl: 1290px);
+$container-max-widths: (sm: 540px, md: 702px, bmd:955px, lg: 1100px, xl: 1260px);
+
+/* Buttons */
+$buttons-states: (
+  footer-button: (
+    default: (
+      text-color: $text-color,
+      border-color: $text-color,
+      bg-color: transparent
+    ),
+    disabled: (
+      (
+        text-color: #BEBEBE,
+        border-color: #BEBEBE,
+        bg-color: transparent
+      )
+    ),
+    hover: (
+      text-color: #fff,
+      border-color: $text-color,
+      bg-color: $text-color
+    ),
+    click: (
+      (
+        text-color: #262626,
+        border-color: #262626,
+        bg-color: #fff
+      )
+    ),
+  ),
+  green-form-button:(
+    default:(
+      text-color: #09AA41,
+      border-color: none,
+      bg-color: #fff
+    ),
+    disabled: (
+      (
+        text-color: #C4C4C4,
+        border-color: none,
+        bg-color: #fff
+      )
+    ),
+    hover: (
+      text-color: #fff,
+      border-color: none,
+      bg-color: #9FF8BD
+    ),
+    click:(
+      text-color: #09AA41,
+      border-color: none,
+      bg-color: #fff
+    )
+  ),
+  white-form-button:(
+    default:(
+      text-color: #fff,
+      border-color: none,
+      bg-color: #09AA41
+    ),
+    disabled: (
+      (
+        text-color: #77B48C,
+        border-color: none,
+        bg-color: #5C936F
+      )
+    ),
+    hover: (
+      text-color: #fff,
+      border-color: none,
+      bg-color: #32DC6D
+    ),
+    click:(
+      text-color: #fff,
+      border-color: none,
+      bg-color: #09AA41
+    )
+  )
+)

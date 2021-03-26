@@ -1,0 +1,4 @@
+/* Функция для назначения состояний кнопок.  */
+@function setBtnState($scheme, $item, $state: default) {
+  @return map-get(map-get(map-get($buttons-states, $scheme), $state), $item);
+}

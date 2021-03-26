@@ -1,0 +1,21 @@
+@mixin font($f_name, $f_url, $f_weight:normal, $f_style:'normal' ) {
+  @font-face {
+    font-family: $f_name;
+    font-style: $f_style;
+    font-weight: $f_weight;
+    src: url($f_url) format('woff2');
+    // font-display: swap // Uncomment to initially display system fonts
+  }
+}
+
+
+/* For customize */
+@mixin font-face-sans($font-family,  $type, $unicode, $weight: normal) {
+  @font-face {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: $weight;
+    src: url('./../fonts/SansPro/#{$type}/sans-pro-#{$weight}.woff2') format('woff2');
+    unicode-range: $unicode;
+  }
+}

@@ -1,0 +1,21 @@
+/* Full centered */
+@mixin centered-xy() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+
+/* Center by horizontal */
+@mixin centered-x() {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Center by vertical */
+@mixin centered-y() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
